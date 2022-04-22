@@ -1,0 +1,16 @@
+{%- comment -%}
+	Custom Javascript files/includes by page type/template name
+	This file is included in theme.liquid
+	Not all cases/templates are here used. Full list of template names can be found here: https://shopify.dev/themes/architecture/templates#template-files
+{%- endcomment -%}
+
+{%- render 'custom-js-global.js' -%}
+
+{%- case template.name -%}
+	{%- when 'index' -%}
+		{%- render 'custom-js-index.js' -%}
+	{%- when 'collection' -%}
+		{%- render 'custom-js-collection.js' -%}
+	{%- when 'product' -%}
+		{%- render 'custom-js-product.js' -%}
+{%- endcase -%}

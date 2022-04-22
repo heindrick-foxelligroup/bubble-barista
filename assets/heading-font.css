@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/rubik/rubik_n4.cc9422f2e84f41ed4707ebaebe66b6de39308266.woff2?h1=YnViYmxlYmFyaXN0YS5jb20&hmac=300465ed624067d00232dcc3ec3a9a2fabe0c0e7e781141b728de6b681d219d6") format("woff2"),
+       url("https://fonts.shopifycdn.com/rubik/rubik_n4.e38b3e3cdf5bea8165936df21f0aa42a1290b5ea.woff?h1=YnViYmxlYmFyaXN0YS5jb20&hmac=e66c996a03fc0401a4613782e77d457acf3969bdd6ad167cfed356eb17caa890") format("woff");
+}
+
+@font-face {
+  font-family: Rubik;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/rubik/rubik_n7.19f3ffdaebed3ef7f852ec956299e048208dddca.woff2?h1=YnViYmxlYmFyaXN0YS5jb20&hmac=376f4502a07fd6976355b7e6c08557e5e3f13a5b70fcf96aa0c9664e80ae0575") format("woff2"),
+       url("https://fonts.shopifycdn.com/rubik/rubik_n7.8f2720450c2243ff10fab788920f36ff5e967078.woff?h1=YnViYmxlYmFyaXN0YS5jb20&hmac=3adb264cdcaae64ff77b556f332439d7166d1d268b524fcbc34bdff636d5c2b4") format("woff");
+}
+
