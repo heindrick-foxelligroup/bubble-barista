@@ -12,7 +12,7 @@
         "group_1": {
           "type": "group_1",
           "settings": {
-            "text_1": "",
+            "text_1": "{{ product.title }}",
             "text_style_1": "title",
             "text_2": "",
             "text_style_2": "normal",
