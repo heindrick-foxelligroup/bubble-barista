@@ -16,6 +16,9 @@
 	Author: Zilvinas Vaisnoras
     Origin author: Edvinas Kilbauskas
     Date created: 2022-01-09
+
+	Last changed on: 22nd March, 2022
+	Last changed by: Bubuka Sahrif
     Included in: templates/product.subscription-product.json
 ******************************************
 {% endcomment %}
@@ -25,6 +28,10 @@
   /* for desktop and mobile */
   .w100proc {
   	width: 100%;
+  }
+  
+  [data-product-handle="made-of-diamonds-subscription"] .product-price-wrap {
+    display: none;
   }
   
   /* for desktop */
@@ -47,11 +54,17 @@
     }*/
     
     .product-single__title__slogan {
-      font-weight: 800;
-      font-size: 32px;
-      line-height: 32px;
-      align-items: center;
+      font-family: Caveat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 60px;
       text-align: center;
+      text-transform: capitalize;
+      color: #FF4367;
+      text-align: center;
+      margin-top: -70px;
+      margin: 0 auto;
     }
     
     .lnr-shopping-cart {
@@ -442,7 +455,7 @@
 
 {% capture product_slug %}
 	<div class="product-single__title__slogan">
-    DIY BUBBLE TEA SUBSCRIPTION BOX
+      Let your sparkle shine through
 	</div>
 {% endcapture %}
 
@@ -481,7 +494,7 @@
 <script>
   	
   	// mobile
-    $("#shopify-section-template--15952050323683__main").before("<video class='top-image-mobile' src='https://cdn.shopify.com/s/files/1/0536/0513/8593/files/480x480.mp4' playsinline autoplay muted loop></video><!--<img  loading='lazy' src='{{ 'mobile-400x400.gif' | asset_url}}'/>-->");
+    $("#shopify-section-template--15317018116257__main").before("<video id='top-video-mobile' class='top-image-mobile' src='https://cdn.shopify.com/s/files/1/0536/0513/8593/files/480x480.mp4' playsinline autoplay muted loop></video><!--<img  loading='lazy' src='{{ 'mobile-400x400.gif' | asset_url}}'/>-->");
     $(".product-single__title").before(`{{ product_slug }}`);
   	$(".pg__review-stars").after("<img class='review-stars-mobile' src='https://cdn.shopify.com/s/files/1/0598/9649/6312/files/review-stars.svg'/>");
     //$(".product-form__item button.add-cart-btn").before(`icon<span class="atc_icon_cart"><img src="{{ cart_icon_atc_uri }}" loading="lazy"></span>`);
@@ -491,11 +504,31 @@
     $(".product-form__item").prepend(`{{ price_in_top_form }}`);
     //$(".add-cart-btn").append("<div class='loading-circle-cta'><img class='lazyload' src='{{ 'lg-loading.gif' | asset_url}}' loading='lazy' /></div>");
 	//$(".col-xs-12.col-md-6.gutter-ele-top-tbs").after($(".product-form__item"));
+    
+    /* Start of Safari IOS autoplay on low power mode fix */
+    // Hotfix: Fix the disabled autoplay issue in safari browser in IOS mobile devices
+    // Author: Bubuka Sharif
+    // Date:   23.03.2022 18:21 [LT Time] 
+    var callback = function() {
+      document.getElementsByTagName('body')[0].ontouchstart = function() {
+        const mobileVideoElement = document.getElementById('top-video-mobile');
+        if (!mobileVideoElement.playing) {
+          mobileVideoElement.play();
+        }
+      }
+    }
+
+    if (document.readyState === "complete" || document.readyState === "loading" && !document.documentElement.doScroll) {
+      callback();
+    } else {
+      document.addEventListener("DOMContentLoaded", callback)
+    }
+    /* End of Safari IOS autoplay on low power mode fix */
   
     // desktop
     //$(".product-single .col-xs-12.col-md-6.gutter-ele-top-tbs").append($(".product-form__item"));
   	$(".product-form__item").after(`<div class="fox-hide--small w100proc"> {{ payment_badges_html }}</div>`);
-    $(".product-single").prepend("<div class='blur-edges'><img  loading='lazy' src='{{ 'mobile-400x400.gif' | asset_url}}'/></div>");
+    $(".product-single").prepend("<div class='blur-edges'><video class='form-background-desktop lazyload' src='https://cdn.shopify.com/s/files/1/0536/0513/8593/files/800x800.mp4' playsinline autoplay muted loop></video></div>");
   	$(".product-single__title").after("<img class='review-stars-desktop' src='https://cdn.shopify.com/s/files/1/0598/9649/6312/files/review_stars_main.svg'/>");
   	$(".product-single .col-xs-12.col-md-6.gutter-ele-top-tbs").append(`<div class="product-badges-desktop fox-hide--small"> {{ badges_html }}</div>`);
 
