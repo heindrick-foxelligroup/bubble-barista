@@ -47,17 +47,11 @@
     }*/
     
     .product-single__title__slogan {
-      font-family: Caveat;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 70px;
-      line-height: 60px;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 32px;
+      align-items: center;
       text-align: center;
-      text-transform: capitalize;
-      color: #FF4367;
-      text-align: center;
-      margin-top: -70px;
-      margin: 0 auto;
     }
     
     .lnr-shopping-cart {
@@ -486,7 +480,7 @@
 
 <script>
   	
-  	// mobile
+  	{% comment %} // mobile
     $("#shopify-section-template--15317018116257__main").before("<video class='top-image-mobile' src='https://cdn.shopify.com/s/files/1/0536/0513/8593/files/480x480.mp4' playsinline autoplay muted loop></video><!--<img  loading='lazy' src='{{ 'mobile-400x400.gif' | asset_url}}'/>-->");
     $(".product-single__title").before(`{{ product_slug }}`);
   	$(".pg__review-stars").after("<img class='review-stars-mobile' src='https://cdn.shopify.com/s/files/1/0598/9649/6312/files/review-stars.svg'/>");
@@ -503,7 +497,7 @@
   	$(".product-form__item").after(`<div class="fox-hide--small w100proc"> {{ payment_badges_html }}</div>`);
     $(".product-single").prepend("<div class='blur-edges'><video class='form-background-desktop lazyload' src='https://cdn.shopify.com/s/files/1/0536/0513/8593/files/800x800.mp4' playsinline autoplay muted loop></video></div>");
   	$(".product-single__title").after("<img class='review-stars-desktop' src='https://cdn.shopify.com/s/files/1/0598/9649/6312/files/review_stars_main.svg'/>");
-  	$(".product-single .col-xs-12.col-md-6.gutter-ele-top-tbs").append(`<div class="product-badges-desktop fox-hide--small"> {{ badges_html }}</div>`);
+  	$(".product-single .col-xs-12.col-md-6.gutter-ele-top-tbs").append(`<div class="product-badges-desktop fox-hide--small"> {{ badges_html }}</div>`); {% endcomment %}
 
 </script>
 
