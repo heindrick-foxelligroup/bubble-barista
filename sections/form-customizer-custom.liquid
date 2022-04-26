@@ -33,6 +33,14 @@
   [data-product-handle="made-of-diamonds-subscription"] .product-price-wrap {
     display: none;
   }
+
+
+  .show-desktop { display: none; }
+  .show-mobile  { display: block; }
+  @media only screen and (min-width: 991px){
+    .show-desktop { display: block; }
+    .show-mobile  { display: none; }
+  }
   
   /* for desktop */
   @media only screen and (min-width: 991px){

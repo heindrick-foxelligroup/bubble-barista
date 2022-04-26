@@ -7,6 +7,7 @@
     margin: 40px 0 0 0;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   
   #{{ section.id }} .main-headline {
@@ -27,26 +28,30 @@
   }
   
   #{{ section.id }} .what-is-diamond-text {
-    font-family: Poppins;
+    font-family: 'Rubik';
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
     text-align: center;
-    max-width: 740px;
-    margin: 0 auto;
+    color: #000F1B;
+    margin-top: 40px;
+    max-width: 532px;
   }
+  
   
 </style>
 
 <div id="{{ section.id }}" class="what-is-diamond-art-section">
-  <div class="">
+  <div class="show-desktop">
     <img src="https://cdn.shopify.com/s/files/1/0610/6444/6179/files/meet_boba_milktea_left.png?v=1650970092" alt="Boba Milktea">
   </div>
   <div>
     <div class="main-headline">
       <div>
-        <img src="https://cdn.shopify.com/s/files/1/0610/6444/6179/files/meet_boba_milktea.png?v=1650969915" alt="Meet Boba Milktea">
+        <img class="show-desktop" src="https://cdn.shopify.com/s/files/1/0610/6444/6179/files/meet_boba_milktea.png?v=1650969915" alt="Meet Boba Milktea">
+        <img class="show-mobile" src="https://cdn.shopify.com/s/files/1/0610/6444/6179/files/meet_boba_milktea_mobile.png?v=1650970993" alt="Meet Boba Milktea Mobile">
+        
       </div>
     </div>
     {% comment %} <div class="divider">
@@ -58,7 +63,7 @@
       Everything you need to make 20 servings of delicious premium quality boba tea all in one box! Enjoy your creations for only $2 per serving, and save $60 each month. Wave overpriced boba goodbye!
     </div>
   </div>
-  <div>
+  <div class="show-desktop">
     <img src="https://cdn.shopify.com/s/files/1/0610/6444/6179/files/meet_boba_milktea_right.png?v=1650970092" alt="Boba Milktea - Girl">
   </div> 
 </div>
