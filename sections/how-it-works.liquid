@@ -305,8 +305,8 @@
     line-height: 24px;
     color: #323050;
     padding: 30px 0 50px 30px;
-    flex-flow: column;
-    max-width: 1100px;
+    flex-flow: row;
+    max-width: 1200px;
     margin: auto;
     align-items: start;
   }
@@ -317,7 +317,7 @@
   }
   
   #{{section.id}}.desktop .text-item:not(:first-child) {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
   }
   
   #{{section.id}}.desktop .text-item > div {
@@ -325,7 +325,7 @@
   }
   
   #{{section.id}}.desktop .text-head {
-    width: 40%;
+    width: 100%;
   }
 
   #{{section.id}}.desktop .text-head-title {
@@ -336,7 +336,9 @@
     line-height: 42px;
     letter-spacing: 0.05em;
     color: #FF4367;
-    text-align: left;
+    width: 100%;
+    text-align: center;
+    display: block;
   }
   
   #{{section.id}}.desktop .text-head-img-wrapper img {
@@ -348,7 +350,7 @@
   }
   
   #{{section.id}}.desktop .text-content {
-    width: 60%;
+    width: 100%;
   }
   
   #{{section.id}}.desktop .text-content-text__desc {
@@ -412,7 +414,7 @@
       How it works
     </div>
     <div class="flex text-wrapper">
-      <div class="flex text-item first-item">
+      <div class="text-item first-item">
         <div class="flex text-content">
           <div class="flex text-head-img-wrapper">
             <img class="text-head-img lazyload" data-src="https://cdn.shopify.com/s/files/1/0536/0513/8593/files/how-it-works-desk-1.png" loading="lazy"/>
@@ -434,7 +436,7 @@
           </div>
         </div>
       </div>
-      <div class="flex text-item second-item">	
+      <div class="text-item second-item">	
         <div class="flex text-content">
           <div class="flex text-head-img-wrapper">
             <img class="text-head-img lazyload" data-src="https://cdn.shopify.com/s/files/1/0536/0513/8593/files/how-it-works-desk-2.png" loading="lazy"/>
@@ -459,7 +461,7 @@
           </div>
         </div>
       </div>
-      <div class="flex text-item third-item">
+      <div class="text-item third-item">
         <div class="flex text-content">
           <div class="flex text-head-img-wrapper">
             <img class="text-head-img lazyload" data-src="https://cdn.shopify.com/s/files/1/0536/0513/8593/files/how-it-works-desk-3.png" loading="lazy"/>
