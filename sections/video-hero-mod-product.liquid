@@ -2,7 +2,7 @@
 <style>
   #shopify-section-{{section.id}} .desktop-video .title {padding-left: 0;padding-right: 0;}
   #shopify-section-{{section.id}} .desktop-video .title span {z-index: 2;background-color: #ffffff;padding: 0 20px;}
-  #shopify-section-{{section.id}} .desktop-video .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -20px;}
+  #shopify-section-{{section.id}} .desktop-video .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -28px;}
  
   #shopify-section-{{section.id}} .desktop-video {
    	position: relative;
@@ -27,21 +27,25 @@
    	    display: none;
   	}
   }
+
+  
+
   
   #shopify-section-{{section.id}} .section-heading {
 	padding: 30px 0 15px 0;
     justify-content: center;
   }
   #shopify-section-{{section.id}} .title {
-    font-family: Poppins;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 22px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
     text-align: center;
     text-transform: uppercase;
-    color: #FF4367;
-    padding: 0 0 10px 0;
+    color: #000F1B;
   }
   #shopify-section-{{section.id}} .slogan {
     font-family: Caveat;
@@ -96,7 +100,7 @@
 
 <div class="desktop-video">
   <div class="section-heading">
-    <div class="title fox-uppercase">
+    <div class="flex title fox-uppercase">
       <span>It’s your time to shine</span>
     </div>
     <div class="slogan">
