@@ -229,17 +229,19 @@ Issues: http://github.com/kenwheeler/slick/issues
       margin: 20px;
       padding: 10px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: flex-end;
     }
   
     .css-tabs-slides .blurb__container .blurb-image {
        text-align: center;
+       margin-bottom: 25px;
     }
   
     .css-tabs-slides .blurb__container .blurb-image img {
-      width: 110px;
-      padding: 6px 0;
+      {% comment %} width: 110px;
+      padding: 6px 0; {% endcomment %}
     }
   
   .css-tabs-slides .blurb__container.reverse { 
@@ -292,6 +294,7 @@ Issues: http://github.com/kenwheeler/slick/issues
     }
     .css-tabs-slides .blurb__container { 
       width: 320px;
+      height: 320px;
     }
     .css-tabs-slides .slick-list.draggable {
       width: 72vw;
