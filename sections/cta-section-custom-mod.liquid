@@ -181,11 +181,13 @@
 
 <style>
   #{{ section.id }}.desktop {
-    background-color: #FF4367;
+    {% comment %} background-color: #FF4367; {% endcomment %}
   }
   
   #{{ section.id }}.desktop .cta-star-left {
       background: url('https://cdn.shopify.com/s/files/1/0610/6444/6179/files/bubble_tea_payment_bg.png?v=1651140801') 15% center no-repeat;
+      background-size: cover;
+      background-position: center;
   }
   
   #{{ section.id }}.desktop .cta-star-right {
