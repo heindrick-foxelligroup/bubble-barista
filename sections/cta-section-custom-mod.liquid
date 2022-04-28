@@ -15,17 +15,29 @@
 <style>
   
   #{{ section.id }}.mobile .content {
-    background-color: ##000F1B;
+    background-color: #000F1B;
     background-image: url('https://cdn.shopify.com/s/files/1/0610/6444/6179/files/bubble_tea_payment_bg_mobile.png?v=1651141772');
     padding: 20px 0 0 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 100px;
   }
   
   #{{ section.id }}.mobile .button {
-    background: url('https://cdn.shopify.com/s/files/1/0536/0513/8593/files/cta-button-buy-now.png') center center no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 88px;
     border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000F1B;
+    background: #F9B537;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 253px;
+    margin: auto;
+    display: block;
   }
   
   #{{ section.id }}.mobile .button:hover {
@@ -45,21 +57,28 @@
   }
   
   #{{ section.id }}.mobile .text1{
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
-    color: #C5F7FF;
-    text-transform: capitalize;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F9B537;
   }
   
   #{{ section.id }}.mobile .text2{
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 39px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
+    letter-spacing: 0.03em;
     text-transform: lowercase;
     color: #FFFFFF;
+    margin-bottom: 20px;
   }
   	
   #{{ section.id }}.mobile .content {
@@ -99,7 +118,7 @@
     }
 
    #{{ section.id }}.mobile .cart__payment-badges-divider .line {
-      border-bottom: 0.5px solid #D6D9DC;;
+      border-bottom: 0.5px solid #F9B537;;
       flex: 1;
       margin-bottom: 4px;
     }
@@ -108,11 +127,12 @@
       font-family: "Avenir Next", sans-serif;
       font-style: normal;
       font-weight: normal;
-      font-size: 11px;
+      font-size: 10px;
       line-height: 11px;
       flex-basis: auto;
       color: #ffffff;;
       margin: 25px 8px 0 8px;
+      color: #F9B537;
     }
 
    #{{ section.id }}.mobile .cart__payment-badges {
@@ -134,7 +154,7 @@
       <div class="text1 fox-uppercase">on a journey of flavors</div>
       <div class="text2">{{ product.price | money }} / month</div>
       <button class="button cta-subox-button">
-        <span class="button-text fox-uppercase"><!-- Subscribe now --></span>
+        <span class="button-text fox-uppercase">Order Now</span>
       </button>
       <div class="badges">
         <div class="w100 cart__payment-badges-divider">
