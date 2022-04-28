@@ -15,7 +15,7 @@
 <style>
   
   #{{section.id}}.mobile {
-   background: #FFF3F5;
+   {% comment %} background: #FFF3F5; {% endcomment %}
   }
   
   #{{section.id}}.mobile,
@@ -40,13 +40,14 @@
     font-style: normal;
     font-weight: 800;
     font-size: 28px;
-    line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    color: #5C2F8D;
+    color: #F66AAF;
     justify-content: center;
-	padding: 40px 20px;
-    background: #fff;
+    background: #000F1B;
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
   }
   #{{section.id}}.mobile .text-wrapper {
     font-size: 16px;
@@ -57,7 +58,7 @@
   }
   #{{section.id}}.mobile .text-item {
     width: 100%;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-bottom: 30px;
   }
   #{{section.id}}.mobile .text-item.third-item {
