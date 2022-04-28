@@ -1,6 +1,6 @@
 
 <style>
-  #shopify-section-{{section.id}} .desktop-video .title {padding-left: 0;padding-right: 0; font-weight: bold; }
+  #shopify-section-{{section.id}} .desktop-video .title {padding-left: 0;padding-right: 0; font-weight: bold; padding-bottom: 0; }
   #shopify-section-{{section.id}} .desktop-video .title span {z-index: 2;background-color: #ffffff;padding: 0 20px;}
   #shopify-section-{{section.id}} .desktop-video .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -28px;}
  
@@ -48,13 +48,13 @@
     color: #000F1B;
   }
   #shopify-section-{{section.id}} .slogan {
-    font-family: Caveat;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 22px;
     text-align: center;
-    color: #30454C;
+    color: #60D0B6;
+    margin-bottom: 40px;
   }
   
   #shopify-section-{{section.id}} .video_button a{
@@ -94,6 +94,15 @@
     width: 100%!important;
     text-align: center!important;
     left: 0px!important;
+  }
+
+  @media screen and (max-width: 767px) {
+    #shopify-section-{{section.id}} .title {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    #shopify-section-{{section.id}} .desktop-video .title::after { display: none; }
+    #shopify-section-{{section.id}} .slogan { font-weight: 700; font-size: 20px; line-height: 32px; margin-bottom: 0; }
   }
       
 </style>
