@@ -70,6 +70,14 @@
       text-align: center;
       text-transform: uppercase;
     }
+
+    .product-single__title {
+      display: none;
+    }
+
+    .product-price-wrap {
+      display: none;
+    }
     
     .lnr-shopping-cart {
      	margin-right: 10px; 
@@ -79,22 +87,14 @@
       /*background-color: #FF4367;
       width: 100%; 
       border: 3px solid #FFFFFF;*/
-	  border-radius: 10px;
-      font-family: Poppins;
+      border-radius: 10px;
       font-style: normal;
       font-weight: bold;
-      font-size: 18px;
-      line-height: 27px;
-      /*padding: 20px;*/
-      text-transform: none;
-      
-      background: url('https://cdn.shopify.com/s/files/1/0610/6444/6179/files/Group_19165.png?v=1650886758') center center no-repeat;
-      background-size: contain;
-      padding: 0 0 0 10px;
-      margin: 4px;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      color: #000F1B;
       border: none;
-      width: 100%;
-      padding-bottom: 38px;
     }
     
     .add-cart-btn:hover,
@@ -270,7 +270,9 @@
   
   /* for mobile */
   @media only screen and (max-width: 990px){
-
+    .product-template-section.big-gutter-bottom {
+      background-color: #FEE8E6;
+    }
 /*     .review-stars-desktop, */
     .journey-starts-here-desktop,
     .form-background-desktop,
@@ -300,7 +302,7 @@
     }
     
     .col-xs-12.col-md-6.gutter-ele-top-tbs {
-      background: #FFF3F5;
+      background: #FFFFFF ;
       padding: 20px 40px 70px 40px;
       width: 80%;
       margin: auto;
@@ -333,17 +335,13 @@
     }
     
     .product-single__title__slogan {
-      font-family: Caveat;
       font-style: normal;
       font-weight: bold;
-      font-size: 32px;
+      font-size: 24px;
       line-height: 30px;
       text-align: center;
-      text-transform: capitalize;
-      color: #FF4367;
-      text-align: center;
-      margin-top: -70px;
-      margin: 0 auto;
+      text-transform: uppercase;
+      color: #F66AAF;
     }
     
     .add-cart-btn {
