@@ -287,7 +287,9 @@ Issues: http://github.com/kenwheeler/slick/issues
     
     .css-tabs-slides .slide.slick-active {  background-color: #fff }
     
-    .css-tabs-slides .slick-list.draggable { width: 80vw; max-height: 500px; margin: auto; }
+    .css-tabs-slides .slick-list.draggable { 
+      {% comment %} width: 80vw; {% endcomment %}
+      max-height: 500px; margin: auto; }
   
    /* for mobile */
   @media only screen and (min-width: 991px) {
@@ -302,7 +304,7 @@ Issues: http://github.com/kenwheeler/slick/issues
       height: 320px;
     }
     .css-tabs-slides .slick-list.draggable {
-      width: 72vw;
+      {% comment %} width: 72vw; {% endcomment %}
       background: #FFF3F5;
 	  border-radius: 20px;
       padding: 0;
