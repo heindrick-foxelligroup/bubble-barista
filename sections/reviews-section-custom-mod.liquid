@@ -20,7 +20,7 @@
 
   #{{section.id}} .title {padding-left: 0;padding-right: 0; font-weight: bold; padding-bottom: 0;     justify-content: center; }
   #{{section.id}} .title span {z-index: 2;background-color: #fff3f5 ;padding: 0 20px;}
-  #{{section.id}} .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -28px;}
+  #{{section.id}}.desktop .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -28px;}
 
   @media only screen and (min-width: 991px) {
     #{{section.id}}.mobile .content{
@@ -64,13 +64,17 @@
     }
     
   #{{section.id}}.mobile .title{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 36px;
     text-align: center;
-    color: #5C2F8D;
+    text-transform: uppercase;
+    color: #F66AAF;
+    background: #000F1B;
+    padding: 20px;
+  }
+
+  #{{section.id}}.mobile .title::after {
+    display: none;
   }
     
   #{{section.id}}.mobile .ramen-divider{
@@ -451,7 +455,7 @@
   <div id="{{section.id}}" class="mobile reviews-section-custom-mod fox-hide--medium-up">
     <div class="wrapper">
       <h2 class="flex title fox-uppercase">
-        We heard people talking
+        We heard<br>people talking...
       </h2>
       <div class="content">
         <div class="testimonial-slider">
