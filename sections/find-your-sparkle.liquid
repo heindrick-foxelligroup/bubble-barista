@@ -16,7 +16,10 @@
 {%- render 'section-background-start' -%}
 
 <style>
-  
+  #{{section.id}} .title {padding-left: 0;padding-right: 0; font-weight: bold; padding-bottom: 0;     justify-content: center; }
+  #{{section.id}} .title span {z-index: 2;background-color: #fff3f5 ;padding: 0 20px;}
+  #{{section.id}} .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -28px;} 
+
   #{{section.id}}.mod-find-sparkle {
    	background: none;
     padding: 25px 0 40px 0;
@@ -159,7 +162,9 @@
 </style>
 
 <div id="{{section.id}}" class="mod-find-sparkle">
-  <div class="section__title__text text-center fox-uppercase">Find your sparkle</div>
+  <h2 class="flex title fox-uppercase">
+    <span>big straw - big dreams</span>
+  </h2>
 	<div class="items-slider">
       {% for block in section.blocks %}
         <div class="slide">
