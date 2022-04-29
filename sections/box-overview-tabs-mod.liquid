@@ -222,6 +222,7 @@ Issues: http://github.com/kenwheeler/slick/issues
       width: calc(50% - 10px);
       background-color: #FFF3F5;
       border-radius: 10px;
+      margin-bottom: 10px;
     }
   
   .css-tabs-slides .blurbs__wrapper .tab-slide-link:hover {
@@ -298,11 +299,18 @@ Issues: http://github.com/kenwheeler/slick/issues
   
    /* for mobile */
   @media only screen and (min-width: 991px) {
+    .css-tabs-slides .blurb__container .blurb-content,
+    .css-tabs-slides .blurb__container .blurb-content-reverse {
+    
+    }
+
     .css-tabs-slides .blurbs__wrapper .tab-slide-link {
       /*width: calc(33% - 10px);*/
       flex: 1 0 30%;
       justify-content: center;
       display: flex;
+      gap: 20px;
+
     }
     .css-tabs-slides .blurb__container { 
       width: 320px;
@@ -379,6 +387,22 @@ Issues: http://github.com/kenwheeler/slick/issues
       content: url('https://cdn.shopify.com/s/files/1/0536/0513/8593/files/arr-right-red-mod.svg?v=1642460190');
       float: right; 
 	}
+
+  @media only screen and (max-width: 767px) {
+    .css-tabs-slides .blurb__container .blurb-content, .css-tabs-slides .blurb__container .blurb-content-reverse {
+      font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: capitalize;
+      /* logo pink */
+      color: #F66AAF;
+    }
+  }
   
   	.css-tabs-slides .slick-prev:before {
       content: url('https://cdn.shopify.com/s/files/1/0536/0513/8593/files/arr-rleft-red-mod.svg');
