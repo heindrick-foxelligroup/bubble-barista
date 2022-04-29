@@ -144,29 +144,41 @@
         "164197924562e9ec78-1": {
           "type": "quote",
           "settings": {
-            "name": "-Susan V.",
-            "quote": "<p>“After a busy day, this helps me to relax and refocus. The painting was really beautiful, adhesive was sticky and diamonds shiny! Loved it!”<\/p><p>-Susan V.<\/p>"
+            "name": "-Grace L.",
+            "quote": "<p>We don’t have access to bubba-shop in my town, so this box is such a discovery! It’s simple, fast, and tastes good. The boba pearls are absolutely delicious, and tea itself is high-quality! My daughter and I are super happy with this new subscription! <\/p>",
+            "author_avatar": "shopify:\/\/shop_images\/Screenshot_2021-12-16_at_18.02_1.png"
           }
         },
         "164197924562e9ec78-2": {
           "type": "quote",
           "settings": {
-            "name": "-Jenny B.",
-            "quote": "<p>“Very easy to do but, man it’s huge. Didn’t realize it was that big, going to be so georgeous when it’s done! My new, exciting hobby.”<\/p><p>-Jenny B.<\/p>"
+            "name": "-Rachel H.",
+            "quote": "<p>My roommates and I wanted to try something new. Bubble Barista box was an excellent idea for some bonding time! We could customize the amount and type of milk, quantity of boba pearls, and strength of tea flavors. Everyone was pleased!<\/p>",
+            "author_avatar": "shopify:\/\/shop_images\/image_137_d28860f0-ea4c-4a70-818b-a02750af93eb.png"
           }
         },
         "fd4f9764-fb7c-447a-90f7-8dcd9b79e4ae": {
           "type": "quote",
           "settings": {
-            "name": "-Katie G.",
-            "quote": "<p>“A pretty canvas with pretty colors and very easy to read the symbols. Even more beautiful than I thought. My favorite hobby, which gives me a smile.”<\/p><p>-Katie G.<\/p>"
+            "name": "-Anna H.",
+            "quote": "<p>The quality of Bubble Barista tea is just as good as in the boba shop! Love being able to make it myself! Has various flavors, the ingredients are fresh, and makes enough bubble tea for everyone in the house! Definitely worth the purchase!<\/p>",
+            "author_avatar": "shopify:\/\/shop_images\/81iV5gDhipL_4eb99318-6886-412a-9366-a225d78d3c21.png"
           }
         },
         "aafff3af-356f-49ce-99ce-21bb6748aa25": {
           "type": "quote",
           "settings": {
-            "name": "-Jennifer C.",
-            "quote": "<p>“Getting the Made of Diamonds subscription is my favorite part of the month! Shiny diamonds and smooth canvas - I love every single detail of my monthly packages.”<\/p><p>-Jennifer C.<\/p>"
+            "name": "-Jessica A.",
+            "quote": "<p>I’m a bubble tea lover, and couldn’t surprise myself better every month! Bubble Barista really prepares you for a fun “kitchen” experiment! Different flavors, recipes, and the quality makes you feel like you're in an actual bubba-shop.<\/p>",
+            "author_avatar": "shopify:\/\/shop_images\/71qgfmCaDTL_da4f69a5-a057-4f13-81b5-4f91e77eacee.png"
+          }
+        },
+        "6b9162c7-a99b-42bc-97c4-cb269fd037cb": {
+          "type": "quote",
+          "settings": {
+            "name": "-Kelly C.",
+            "quote": "<p>It has been the most delicious and fun kitchen experience! Super easy to make, and tastes just like what I would usually buy. It comes with 2 recipes, and makes plenty of servings! Can’t wait to try next month’s flavors!<\/p>",
+            "author_avatar": "shopify:\/\/shop_images\/image_139.png"
           }
         }
       },
@@ -175,7 +187,8 @@
         "164197924562e9ec78-1",
         "164197924562e9ec78-2",
         "fd4f9764-fb7c-447a-90f7-8dcd9b79e4ae",
-        "aafff3af-356f-49ce-99ce-21bb6748aa25"
+        "aafff3af-356f-49ce-99ce-21bb6748aa25",
+        "6b9162c7-a99b-42bc-97c4-cb269fd037cb"
       ],
       "settings": {
         "enable_mobile": true,
