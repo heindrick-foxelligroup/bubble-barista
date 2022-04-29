@@ -278,7 +278,7 @@
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
-      height: 400px;
+      /*height: 400px;*/
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -447,7 +447,9 @@
 {%- if section.settings.enable_mobile == true -%}
   <div id="{{section.id}}" class="mobile reviews-section-custom-mod fox-hide--medium-up">
     <div class="wrapper">
-      <h2 class="title fox-uppercase"><span>We heard people talking</span></h2>
+      <h2 class="flex title fox-uppercase">
+        <span>We heard people talking</span>
+      </h2>
       <div class="content">
         <div class="testimonial-slider">
           {% for block in section.blocks %}
@@ -472,7 +474,9 @@
 
   <div id="{{section.id}}" class="desktop section-reviews-section-custom2 fox-hide--small">
     <div class="wrapper">
-      <h2 class="title fox-uppercase"><span>We heard people talking</span></h2>
+      <h2 class="flex title fox-uppercase">
+        <span>We heard people talking</span>
+      </h2>
       <div class="content">
         <div class="testimonial-slider">
           {% for block in section.blocks %}
