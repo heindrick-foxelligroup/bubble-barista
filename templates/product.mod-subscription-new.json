@@ -69,7 +69,7 @@
         "hide_small_images_mb": false,
         "show_media_btn": true,
         "thumbs_layout": "ver_slider",
-        "sticky_content": "images",
+        "sticky_content": "none",
         "sc_enable": false,
         "collapse_tab_fs_mb": 14,
         "collapse_tab_fs_gk": 15
