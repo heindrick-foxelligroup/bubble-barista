@@ -205,8 +205,9 @@ Issues: http://github.com/kenwheeler/slick/issues
       left: 4px;
       border-color: var(--pink-color); }
     
-    .css-tabs-slides section > div { 
-      	padding-top: 33px;
+    .css-tabs-slides section > div {
+      padding: 0 30px;  
+      padding-top: 33px;
     	padding-bottom: 0px;
     }
 
@@ -219,6 +220,8 @@ Issues: http://github.com/kenwheeler/slick/issues
   
     .css-tabs-slides .blurbs__wrapper .tab-slide-link {
       width: calc(50% - 10px);
+      background-color: #FFF3F5;
+      border-radius: 10px;
     }
   
   .css-tabs-slides .blurbs__wrapper .tab-slide-link:hover {
@@ -226,14 +229,15 @@ Issues: http://github.com/kenwheeler/slick/issues
   }
     
     .css-tabs-slides .blurb__container { 
-      background-color: #FFF3F5;
-      border-radius: 10px;
+      {% comment %} background-color: #FFF3F5;
+      border-radius: 10px; {% endcomment %}
       margin: 20px;
       padding: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
+      height: 100%;
     }
   
     .css-tabs-slides .blurb__container .blurb-image {
@@ -244,6 +248,7 @@ Issues: http://github.com/kenwheeler/slick/issues
     .css-tabs-slides .blurb__container .blurb-image img {
       {% comment %} width: 110px;
       padding: 6px 0; {% endcomment %}
+      width: 100%;
     }
   
   .css-tabs-slides .blurb__container.reverse { 
