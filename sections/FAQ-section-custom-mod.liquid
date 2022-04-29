@@ -3,6 +3,7 @@
   #{{section.id}} .title span {z-index: 2;background-color: #ffffff; padding: 0 20px;}
   #{{section.id}} .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -28px;} 
   @media only screen and (max-width: 767px){
+    #{{ section.id }} { margin-top: 0;}
     #{{section.id}} .title::after { display: none; }
     #{{section.id}} .title span {
       font-size: 30px;
@@ -14,6 +15,7 @@
       padding: 20px;
       width: 100%;
     }
+    
   }
 
 
