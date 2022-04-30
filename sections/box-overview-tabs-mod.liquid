@@ -595,14 +595,18 @@ Issues: http://github.com/kenwheeler/slick/issues
       dots: true
   });   
   
-
   
-    $("a.tab-slide-link").click(function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      $("#tab2").click();
-      $('.tab-slider').slick('slickGoTo', $(this).index());
-    })
+  
+  $("a.tab-slide-link").click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $("#tab2").click();
+    $('.tab-slider').slick('slickGoTo', $(this).index());
+  })
+
+  $('.pc-tab nav .tab2 label').on('click', function(){
+    $('.css-tabs-slides .slick-arrow.slick-next').click()
+  })
 </script>
 
 {% schema %}
