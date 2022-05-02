@@ -45,7 +45,9 @@ Issues: http://github.com/kenwheeler/slick/issues
   #{{section.id}} .title span {z-index: 2;background-color: #ffffff; padding: 0 20px;}
   #{{section.id}} .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -28px;} 
   @media only screen and (max-width: 767px){
+    #{{section.id}} { margin-top: 30px; }
     #{{section.id}} .title::after { display: none; }
+    #{{section.id}} .title { margin-top: 0; }
     #{{section.id}} .title span {
       font-size: 30px;
       line-height: 36px;
@@ -55,6 +57,7 @@ Issues: http://github.com/kenwheeler/slick/issues
       background: #000F1B;
       padding: 20px;
       width: 100%;
+      display: block;
     }
   }
  
