@@ -41,6 +41,11 @@ Issues: http://github.com/kenwheeler/slick/issues
       --dark-grey-content-color: #5F6472;
   }
   
+  #{{section.id}} .title {padding-left: 0;padding-right: 0; font-weight: bold; padding-bottom: 0;     justify-content: center; font-size: 40px; font-family: 'Bungee', cursive; }
+  #{{section.id}} .title span {z-index: 2;background-color: #ffffff; padding: 0 20px;}
+  #{{section.id}} .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -28px;} 
+ 
+
   #{{section.id}} .title {
     font-family: Poppins;
     font-style: normal;
@@ -433,7 +438,7 @@ Issues: http://github.com/kenwheeler/slick/issues
 
 <div id="{{ section.id }}" class="section-overview-tabs-mod">
 <div class="css-tabs-slides">
-  {% comment %} <h2 class="title fox-uppercase"><span>How to start</span></h2> {% endcomment %}
+    <h2 class="title fox-uppercase visible-mobile"><span>Let your bubbly adventure begin</span></h2>
     <div class="box-overview css-tab">
       <div class="pc-tab">
         <input checked="checked" id="tab1" class="tabs" type="radio" name="pct" />
