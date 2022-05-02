@@ -40,10 +40,23 @@ Issues: http://github.com/kenwheeler/slick/issues
       --dark-blue-title-color: #305875;
       --dark-grey-content-color: #5F6472;
   }
-  
-  #{{section.id}} .title {padding-left: 0;padding-right: 0; font-weight: bold; padding-bottom: 0;     justify-content: center; font-size: 40px; font-family: 'Bungee', cursive; }
+
+   #{{section.id}} .title {padding-left: 0;padding-right: 0; font-weight: bold; padding-bottom: 0;     justify-content: center; font-size: 40px; font-family: 'Bungee', cursive; }
   #{{section.id}} .title span {z-index: 2;background-color: #ffffff; padding: 0 20px;}
   #{{section.id}} .title::after { content: ''; height: 8px; width: 100%; background-color: #F66AAF; margin-top: -28px;} 
+  @media only screen and (max-width: 767px){
+    #{{section.id}} .title::after { display: none; }
+    #{{section.id}} .title span {
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #F66AAF;
+      background: #000F1B;
+      padding: 20px;
+      width: 100%;
+    }
+  }
  
 
   #{{section.id}} .title {
