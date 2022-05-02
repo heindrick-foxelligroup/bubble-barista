@@ -2228,9 +2228,9 @@ input[type="number"] {
 }
 
 .button--cart:hover, .button--cart:focus {
-  color: var(--color_btn_cart_hover);
+  /* color: var(--color_btn_cart_hover);
   background: var(--bkg_btn_cart_hover);
-  border-color: var(--bkg_btn_cart_hover);
+  border-color: var(--bkg_btn_cart_hover); */
 }
 
 @media (min-width: 992px) {
