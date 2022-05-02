@@ -62,7 +62,7 @@
       background-size: contain;
       background-position: 15%;
     }
-    
+    .product-single__title__slogan.hidden-pc { display: none; }
     .product-single__title__slogan {
       font-weight: 800;
       font-size: 32px;
@@ -347,6 +347,7 @@
 
     }
     
+    .product-single__title__slogan.hidden-mobile { display: none; }
     .product-single__title__slogan {
       font-style: normal;
       font-weight: bold;
@@ -469,8 +470,11 @@
 {% endcapture %}
 
 {% capture product_slug %}
-	<div class="product-single__title__slogan">
+	<div class="product-single__title__slogan hidden-mobile">
     diy bubble tea subscritpion box
+	</div>
+  <div class="product-single__title__slogan hidden-pc">
+    BUBBLE TEA BOX
 	</div>
 {% endcapture %}
 
