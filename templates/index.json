@@ -2472,20 +2472,6 @@
         "ver_banner_url_3": ""
       }
     },
-    "164819961960d954c1": {
-      "type": "heading-image-section-custom-new",
-      "settings": {
-        "enable_on_mobile": true,
-        "enable_on_desktop": true,
-        "red_bg_title_mob": true,
-        "red_bg_title_desk": true,
-        "sect_bg_color_mob": "#999999",
-        "sect_bg_color_desk": "#f1f1f1",
-        "section_name": "WHAT'S IN THE BOX",
-        "main_image_mobile": "shopify:\/\/shop_images\/whats-in-the-box-mob.png",
-        "main_image_desktop": "shopify:\/\/shop_images\/whats-in-the-box-desk.png"
-      }
-    },
     "1633591489e69f5f78": {
       "type": "rich-banner",
       "blocks": {
