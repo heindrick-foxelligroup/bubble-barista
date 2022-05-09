@@ -756,7 +756,7 @@
         ],
         "settings": {
           "bkg_enable": true,
-          "section_bkg": "#f7e3e6",
+          "section_bkg": "#ffffff",
           "copyright": "",
           "footer_link": "",
           "gutter_top": "home",
